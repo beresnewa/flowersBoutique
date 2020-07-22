@@ -1,0 +1,31 @@
+.navbar {
+    height: 10vh;
+    background-color: rgba(245, 244, 244, 0.2);
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.buttonBasket{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.buttonBasket > img{
+    height: 50px;
+    width: 50px;
+}

@@ -1,0 +1,22 @@
+.bouquet{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    position: relative;
+    bottom: 250px;
+    left:150px;
+}
+
+.bouquet img{
+    height: 300px;
+    width: 300px;
+}
+
+.bouquet span{
+    width: 300px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+

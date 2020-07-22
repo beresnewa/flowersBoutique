@@ -1,0 +1,55 @@
+.postcard {
+  max-width: 400px;
+  margin: 100px auto 0;
+  padding: 20px;
+  background: #fffdee;
+  border: 10px solid transparent;
+  border-radius: 10px;
+  font-family: 'Playfair Display';
+  color: #605756;
+}
+.form-row {margin-bottom: 10px;}
+.form-row input[type="text"], 
+.form-row input[type="email"],
+.form-row input[type="phone"],  
+.form-row textarea {
+  width: 100%;
+  padding: 0 10px;
+  line-height: 35px;
+  border-width: 0;
+  outline: none;
+  background: transparent url(https://html5book.ru/wp-content/uploads/2016/12/bg-form.png) bottom left repeat-x;
+  background-size: 8px 35px;
+  font-family: 'Playfair Display';
+}
+.form-row textarea {
+  background-attachment: local;
+  background-repeat: repeat;
+  resize: none;
+}
+.form-row-button {
+  max-width: 400px;
+  margin: 20px auto 0 auto;
+  width: 200px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgb(233, 58, 195);
+  font-size: 20px;
+  color:white;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 2px 25px rgb(233, 58, 195);
+  cursor: pointer;
+  align-items: flex-end;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+}
+.form-row-button:hover {background: #C42061;}
+
+.checkout-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+

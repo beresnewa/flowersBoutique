@@ -1,0 +1,22 @@
+
+.flower{
+    padding: 10px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.flowerPicture{
+    height: 100px;
+    width: 100px;
+}
+
+.textName{
+    padding-left: 10px;
+    color: #33CC82;
+
+}
+

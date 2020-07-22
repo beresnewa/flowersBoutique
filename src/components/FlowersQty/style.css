@@ -1,0 +1,29 @@
+.flowersQty{
+    font-size: 20px;
+    color: #33CC82;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+}
+
+.buttonQty{
+    width: 14px;
+    height: 14px;
+    color: #33CC82;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    cursor: pointer;
+    line-height: 14px;
+    background-color: transparent;
+    outline: none;
+    margin: 4px;
+    padding: 0;
+}
+
+.buttonQty:active{
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+}
+.buttonQty:hover{
+    background-color: rgba(245, 244, 244, 0.5);
+}

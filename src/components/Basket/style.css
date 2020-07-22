@@ -1,0 +1,110 @@
+.basket{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    height: 100%;
+    margin-bottom: 50px;
+    align-items: center;
+
+}
+
+h1{
+    text-align: center;
+    color: white;
+    padding-top: 200px;
+}
+
+h2{
+    text-align: start;
+    color: white;
+    padding-top: 100px;
+    font-size: 30px;
+}
+
+.product-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.infoBouquet{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.infoBouquet span{
+    color: #33CC82;
+}
+
+.infoBouquet .count{
+    font-size: 15px;
+}
+
+.bouquetInBasket{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 20px;
+    width: 400px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.bouquetInBasket img {
+    height: 200px;
+    width: 200px;
+}
+
+.buttonDel{
+    font-family: Roboto,sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    text-decoration: none;
+    background-color: transparent;
+    border:none;
+    color: white;
+   
+}
+
+.container-buttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 40px;
+    
+}
+
+.container-buttons span{
+    font-size: 30px;
+    padding-top: 60px;
+}
+
+.buttonCheakout{
+    width: 150px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #33CC82;
+    font-size: 20px;
+    color:white;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 2px 25px rgba(0, 255, 170, 0.5);
+    cursor: pointer;
+    align-items: flex-end;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+}
+
+.buttonCheakout:active{
+    background-color: rgba(77, 226, 176, 0.5);
+}
+
+
