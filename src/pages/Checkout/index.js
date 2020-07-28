@@ -33,18 +33,19 @@ const ChechoutPage = () => {
     }
 
     const showMessage = () => {
-        
         if(name?.length>0 && email?.length>0 && phone?.length>0 && adress?.length>0){
             swal("Заказ оформлен", "Наш менеджер с вами свяжется")
                 .then(() => { 
                     return history.push(ROUTES.MAIN) 
-                })
+            })
+        } else {
+            swal("Необходимо заполнить все поля")
         }
     }
 
     return (
         <div className="checkout-container">
-            <form className="postcard">
+            <form className="postcard" name="myForm">
                 <div className="form-row">
                     <label htmlFor="name">Имя</label><input type="text" id="name" required value={name} onChange={setName}/>
                 </div>
@@ -52,13 +53,13 @@ const ChechoutPage = () => {
                     <label htmlFor="email">Email</label><input type="email" id="email" required value={email} onChange={setEmail} />
                 </div>
                 <div className="form-row">
-                    <label htmlFor="phone">Телефон</label><input type="phone" id="phone" required pattern="+[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" value={phone} onChange={setPhone}/>
+                    <label htmlFor="phone">Телефон</label><input type="phone" id="phone" required pattern="+[0-9]{3}-([0-9]{2})-[0-9]{3}-[0-9]{2}-[0-9]{2}" value={phone} onChange={setPhone}/>
                 </div>
                 <div className="form-row">
                     <label htmlFor="message">Адрес</label><textarea rows="2" id="message" required value={adress} onChange={setAdress}></textarea>
                 </div>   
             </form>
-            <button className="form-row-button" onsubmit="return false;" onClick={showMessage}>Подтвердить заказ</button>
+            <button className="form-row-button" onClick={showMessage}>Подтвердить заказ</button>
         </div>  
     )
 } 
