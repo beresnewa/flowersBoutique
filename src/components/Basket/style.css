@@ -8,7 +8,18 @@
     align-items: center;
 
 }
+.infoEmptyBasket{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.infoEmptyBasket img {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding-left: 720px;
+}
 h1{
     text-align: center;
     color: white;

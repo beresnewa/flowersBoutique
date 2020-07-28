@@ -12,7 +12,12 @@ const Basket = () => {
   const bouquetsInBasket = useSelector(state => state.bouquets.inBasket)
 
   if(!Object.keys(bouquetsInBasket).length){
-    return <h1>Корзина пуста</h1>
+    return (
+      <div className="infoEmptyBasket">
+        <h1>Корзина пуста</h1>
+        <img src="/img/грустно.png" />
+      </div>
+      )
   }
 
   let totalPrice = null;
